@@ -14,6 +14,7 @@ body {
     position: relative;
 }
 
+/* header */
 h1 {
     text-align: center;
     margin-top: 30px;
@@ -22,6 +23,7 @@ h1 {
     text-shadow: 2px 2px 2px  blanchedalmond;
 }
 
+/* navigation bar */
 nav {
     letter-spacing: 3px;
     text-align: center;
@@ -38,7 +40,8 @@ nav a {
     text-decoration: none;
 }
 
-p {
+/* home page introduction */
+#intro p {
     text-align: justify;
     margin: 0 auto;
     margin-top: 20px;
@@ -67,7 +70,7 @@ p {
     color: black;
     font-size: 24px;
 }
-
+/* footer*/
 footer {
     letter-spacing: 3px;
     text-align: center;
@@ -79,6 +82,52 @@ footer {
     padding-bottom: 20px;
     font-size: 18px;
 }
+
+/* game page welcome box */
+.welcome-page {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 65%;
+    height: 40%;
+    padding: 30px;
+    background-color: rgb(255, 235, 205, 0.9);
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px;
+    display: none;
+}
+
+.welcome-page p {
+    padding: 30px;
+    font-weight: 30px;
+}
+
+.start-button {
+    font-size: 35px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: chartreuse;
+    border-radius: 5px;
+}
+
+/* game page game area */
+#game-area {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 65%;
+    height: 40%;
+    padding: 30px;
+    background-color: rgb(255, 235, 205, 0.9);
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px;
+    display: none;
+}
+
 /* for small screen sizes */
 @media only screen and (max-width: 400px) {
     body {
