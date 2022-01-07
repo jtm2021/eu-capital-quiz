@@ -84,7 +84,7 @@ footer {
 }
 
 /* game page welcome box */
-.welcome-page {
+.welcome-area {
     margin: 0 auto;
     margin-top: 50px;
     width: 65%;
@@ -99,12 +99,12 @@ footer {
     display: none;
 }
 
-.welcome-page p {
+.welcome-area p {
     padding: 30px;
     font-weight: 30px;
 }
 
-.start-button {
+.st-button {
     font-size: 35px;
     padding: 10px;
     margin-top: 30px;
@@ -113,20 +113,66 @@ footer {
 }
 
 /* game page game area */
-#game-area {
+.gm-area {
     margin: 0 auto;
     margin-top: 50px;
-    width: 65%;
-    height: 40%;
-    padding: 30px;
+    width: 75%;
+    height: 60%;
     background-color: rgb(255, 235, 205, 0.9);
-    font-size: 50px;
     justify-content: center;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px 3px;
-    display: none;
 }
+
+.act-question {
+    background: rgb(76, 78, 74, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ans-button button{
+    padding: 28px;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 120px;
+
+}
+
+.button {
+    font-size: 15px;
+}
+
+.nx-button button{
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#score-box {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 75%;
+    height: 5%;
+    background-color: rgba(27, 97, 228, 0.9);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px;
+    color: cornsilk;
+    font-size: 20px;
+}
+
 
 /* for small screen sizes */
 @media only screen and (max-width: 400px) {
