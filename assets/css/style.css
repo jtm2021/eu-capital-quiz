@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/eu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* for small screen sizes */
+@media only screen and (max-width: 400px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position-x: -300px;
+    }
+}
