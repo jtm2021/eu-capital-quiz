@@ -81,13 +81,14 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 /* game page welcome box */
 .welcome-area {
     margin: 0 auto;
     margin-top: 50px;
-    width: 65%;
+    width: 70%;
     height: 40%;
     padding: 30px;
     background-color: rgb(255, 235, 205, 0.9);
@@ -96,7 +97,6 @@ footer {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px 3px;
-    display: none;
 }
 
 .welcome-area p {
@@ -123,6 +123,7 @@ footer {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px 3px;
+    display: none;
 }
 
 .act-question {
@@ -149,6 +150,10 @@ footer {
     font-size: 15px;
 }
 
+.button:hover {
+    color: darkgreen;
+}
+
 .nx-button button{
     padding: 15px;
     margin-top: 30px;
@@ -159,10 +164,11 @@ footer {
 
 #score-box {
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 75%;
     height: 5%;
     background-color: rgba(27, 97, 228, 0.9);
+    display: block;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -170,7 +176,8 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px 3px;
     color: cornsilk;
-    font-size: 20px;
+    font-size: 30px;
+    display: none;
 }
 
 
