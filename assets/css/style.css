@@ -10,8 +10,45 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    font-family: 'Roboto', 'sans-serif';
 }
 
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+nav {
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+nav li {
+    display: inline;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding: 30px;
+    background-color: rgb(255, 235, 205, 0.9);
+    font-size: 18px;
+}
 /* for small screen sizes */
 @media only screen and (max-width: 400px) {
     body {
