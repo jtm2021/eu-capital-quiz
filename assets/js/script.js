@@ -121,7 +121,7 @@ function launchNextQuestion() {
     if (currentQuestionIndex === questions.length) {
         resetButton.classList.add('show')
         nextButton.classList.add('hidebtn')
-        questionElement.innerText = `Congratulations! You've completed the test with a score of ${score}`
+        questionElement.innerText = `Congratulations! You've completed the quiz and you have successfully named ${score} capitals out of 27!`
     } else {
         showQuestion(shuffledQuestions[currentQuestionIndex])
     }
@@ -149,7 +149,6 @@ function resetState() {
     }
 }
 
-
 function checkAnswer(e) {
     nextButton.disabled = false
     const answerButtons = document.querySelectorAll(".btn")
@@ -175,7 +174,6 @@ function checkAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
-        
         element.classList.add('correct')
         renderScore()
     } else {

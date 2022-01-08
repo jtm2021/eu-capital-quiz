@@ -6,12 +6,15 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background-image: url(../images/eu.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    position: relative;
     font-family: 'Roboto', 'sans-serif';
     position: relative;
+    object-fit: fill;
 }
 
 /* header */
@@ -48,16 +51,15 @@ nav a {
     margin-left: 20px;
     margin-right: 20px;
     letter-spacing: 2px;
-    line-height: 25px;
     padding: 30px;
     background-color: rgb(255, 235, 205, 0.9);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .play {
     text-align: center;
     margin: 0 auto;
-    margin-top: 28px;
+    margin-top: 10px;
     background-color: rgba(47, 252, 6, 0.9);
     padding: 10px;
     width: 40%;
@@ -68,7 +70,7 @@ nav a {
 .play a {
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 15px;
 }
 /* footer*/
 footer {
@@ -235,14 +237,4 @@ footer {
 
 .form {
     padding: 12px;
-}
-
-/* for small screen sizes */
-@media only screen and (max-width: 400px) {
-    body {
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        background-position-x: -300px;
-    }
 }
