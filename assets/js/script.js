@@ -153,10 +153,8 @@ function checkAnswer(e) {
     nextButton.disabled = false
     const answerButtons = document.querySelectorAll(".btn")
     answerButtons.forEach((btn)=> btn.disabled = true)
-
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-
     if(correct) score++
     setStatusClass(document.body, correct)
     Array.from(answerElement.children).forEach(button => {
@@ -168,7 +166,6 @@ function checkAnswer(e) {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
     }
-    
 }
 
 function setStatusClass(element, correct) {

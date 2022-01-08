@@ -60,17 +60,25 @@ nav a {
     text-align: center;
     margin: 0 auto;
     margin-top: 10px;
-    background-color: rgba(47, 252, 6, 0.9);
-    padding: 10px;
-    width: 40%;
+    background-color: rgba(108, 219, 86, 0.9);
+    padding: 5px;
+    width: 80px;
     border-radius: 8px;
     box-shadow: 0 0 10px 3px;
+    cursor: pointer;
 }
 
 .play a {
     text-decoration: none;
     color: black;
     font-size: 15px;
+    padding: 10px;
+    width: 15%;
+}
+
+.play:hover {
+    background: chartreuse;
+    box-shadow: 0 0 5px 1px;
 }
 /* footer*/
 footer {
@@ -112,12 +120,18 @@ footer {
     margin-top: 30px;
     background-color: chartreuse;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.st-button:hover {
+    background: chartreuse;
+    box-shadow: 0 0 5px 1px;
 }
 
 /* game page game area */
 .gm-area {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 75%;
     height: 60%;
     background-color: rgb(255, 235, 205, 0.9);
@@ -131,29 +145,25 @@ footer {
 .act-question {
     background: rgb(76, 78, 74, 0.1);
     border-radius: 10px;
-    padding: 20px;
     height: 100px;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .ans-button button{
-    padding: 28px;
+    padding: 20px;
     margin: 5px;
     margin-top: 20px;
     border-radius: 10px;
     width: 120px;
-
+    cursor: pointer;
+    justify-content: center;
 }
 
-.button {
-    font-size: 15px;
-}
-
-.button:hover {
-    color: darkgreen;
+.ans-button button:hover {
+    background-color: chartreuse;
 }
 
 .nx-btn{
@@ -166,11 +176,12 @@ footer {
 
 .nx-btn:hover {
     background-color: rgb(8, 233, 102);
+    box-shadow: 0 0 5px 1px;
 }
 
 #score-box {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 75%;
     height: 5%;
     background-color: rgba(27, 97, 228, 0.9);
@@ -182,7 +193,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px 3px;
     color: cornsilk;
-    font-size: 30px;
+    font-size: 25px;
     display: none;
 }
 
@@ -197,7 +208,8 @@ footer {
 }
 
 .restart-btn:hover {
-    background-color: rgb(8, 233, 102);
+    background-color: chartreuse;
+    box-shadow: 0 0 5px 1px;
 }
 
 .show {
@@ -228,13 +240,165 @@ footer {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    letter-spacing: 2px;
-    line-height: 25px;
-    padding: 30px;
+    padding: 10px;
     background-color: rgb(255, 235, 205, 0.9);
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .form {
     padding: 12px;
+}
+
+.input-field {
+    width: 80%;
+    padding: 5px;
+    font-size: 10px;
+    margin: 2px;
+}
+
+.input-msg {
+    width: 81%;
+    height: 90px;
+}
+
+.sub-bttn {
+    width: 100px;
+}
+
+/* For medium screen sizes from 750px wide and up (768x1024)*/
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    nav li {
+        font-size: 40px;
+    }
+
+    #intro p {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        letter-spacing: 5px;
+        padding: 30px;
+        font-size: 25px;
+        line-height: 2.5rem;
+    }
+
+    .play {
+        margin-top: 30px;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .play a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    /* welcome area for tablets */
+    .welcome-area {
+        width: 70%;
+        height: 25%;
+        font-size: 40px;
+    }
+
+    /* game area for tablets */
+    .act-question {
+        height: 200px;
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .ans-button button{
+        padding: 40px;
+        margin: 20px;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .nx-btn {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    #score-box {
+        padding-top: 15px;
+    }
+
+    .restart-btn {
+        font-size: 18px;
+        margin-top: 80px;
+    }
+
+    /* Help page for tablets*/
+    #guide {
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 20px;
+        background-color: rgb(255, 235, 205, 0.9);
+        font-size: 18px;
+    }
+    
+    .input-field {
+        width: 80%;
+        padding: 5px;
+        font-size: 15px;
+        margin: 2px;
+    }
+    
+    .input-msg {
+        width: 80.3%;
+        height: 90px;
+    }
+    
+    .sub-bttn {
+        width: 100px;
+    }
+}
+
+/* For larger screen sizes from 1200px wide and up (1280X802*/
+@media screen and (min-width: 1200px) {
+    /* game area for laptops */
+    .gm-area {
+        height: 55%;
+    }
+
+    .act-question {
+        height: 200px;
+        font-size: 30px;
+        padding: 10px;
+        margin-top: 20px;
+        height: 150px;
+    }
+
+    .ans-button button{
+        padding: 30px;
+        margin: 30px;
+        width: 150px;
+    }
+
+    /* Help page for laptops */
+    #guide {
+        margin-top: 15px;
+        margin-left: 400px;
+        margin-right: 400px;
+        padding: 20px;
+        background-color: rgb(255, 235, 205, 0.9);
+        font-size: 15px;
+    }
+
+    .input-field {
+        width: 80%;
+        padding: 5px;
+        font-size: 13px;
+        margin: 2px;
+        display: flex;
+    }
+
+    .sub-bttn {
+        width: 80px;
+    }
+        
 }
