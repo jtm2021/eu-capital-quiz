@@ -154,12 +154,16 @@ footer {
     color: darkgreen;
 }
 
-.nx-button button{
+.nx-btn{
     padding: 15px;
     margin-top: 30px;
     border-radius: 15px;
     padding-left: 80px;
     padding-right: 80px;
+}
+
+.nx-btn:hover {
+    background-color: rgb(8, 233, 102);
 }
 
 #score-box {
@@ -178,6 +182,33 @@ footer {
     color: cornsilk;
     font-size: 30px;
     display: none;
+}
+
+
+.restart-btn {
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: none;
+}
+
+.restart-btn:hover {
+    background-color: rgb(8, 233, 102);
+}
+
+.show {
+    display: block;
+}
+
+.hidebtn {
+    display: none;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 

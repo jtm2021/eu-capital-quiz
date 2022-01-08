@@ -34,20 +34,21 @@
     </div>
     <div id="game-area" class="gm-area">
         <div id="question-box">
-            <p id="actualquestion" class="act-question"></p>
+            <p id="actualquestion" class="act-question">Question?</p>
             <div id="answers-button" class="ans-button">
                 <button class="button">Answer 1</button>
                 <button class="button">Answer 2</button>
                 <button class="button">Answer 3</button>
                 <button class="button">Answer 4</button>
             </div>
-            <div id="next-button" class="nx-button">
-                <button class="button">Next</button>
+            <div class="btn-wrapper">
+                <button id="next-btn" class="nx-btn btn hide">Next</button>
+                <button id="reset-btn" class="restart-btn btn hide">Restart</button>
             </div>
         </div>
     </div>
     <div id="score-box">
-        <div>Score = <span>0</span></div>
+        <div>Score = <span id="score">0</span></div>
     </div>
     <footer>
         <div>
