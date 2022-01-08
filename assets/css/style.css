@@ -211,6 +211,31 @@ footer {
     justify-content: center;
 }
 
+.btn.correct {
+    background-color: chartreuse;
+}
+
+.btn.wrong {
+    background-color: crimson;
+}
+
+/* Help Page */
+#guide {
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding: 30px;
+    background-color: rgb(255, 235, 205, 0.9);
+    font-size: 16px;
+}
+
+.form {
+    padding: 12px;
+}
 
 /* for small screen sizes */
 @media only screen and (max-width: 400px) {

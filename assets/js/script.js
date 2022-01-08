@@ -6,6 +6,8 @@ const questionElement = document.getElementById('actualquestion')
 const answerElement = document.getElementById('answers-button')
 const nextButton = document.getElementById('next-btn')
 const resetButton = document.getElementById('reset-btn')
+const currentScore = document.getElementById('score')
+
 
 let shuffledQuestions, currentQuestionIndex
 let score = 0
@@ -99,6 +101,7 @@ startButton.addEventListener('click', startGame)
 resetButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
+    nextButton.disabled = true
     launchNextQuestion()
 })
 
@@ -118,7 +121,7 @@ function launchNextQuestion() {
     if (currentQuestionIndex === questions.length) {
         resetButton.classList.add('show')
         nextButton.classList.add('hidebtn')
-        questionElement.innerText = "Quiz done!"
+        questionElement.innerText = `Congratulations! You've completed the test with a score of ${score}`
     } else {
         showQuestion(shuffledQuestions[currentQuestionIndex])
     }
@@ -146,9 +149,16 @@ function resetState() {
     }
 }
 
+
 function checkAnswer(e) {
+    nextButton.disabled = false
+    const answerButtons = document.querySelectorAll(".btn")
+    answerButtons.forEach((btn)=> btn.disabled = true)
+
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
+
+    if(correct) score++
     setStatusClass(document.body, correct)
     Array.from(answerElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -165,7 +175,9 @@ function checkAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
+        
         element.classList.add('correct')
+        renderScore()
     } else {
         element.classList.add('wrong')
     }
@@ -176,6 +188,6 @@ function clearStatusClass(element) {
     element.classList.remove('wrong')
 }
 
-function scoreStatus(boostScore) {
-    document.getElementById('score').innerHTML = boostScore
+function renderScore() {
+    currentScore.innerHTML = score
 }
