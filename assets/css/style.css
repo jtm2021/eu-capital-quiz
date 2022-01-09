@@ -385,10 +385,12 @@ footer {
     }
 
     .ans-button button{
-        padding: 30px;
+        padding: 25px;
+        padding-left: 20px;
         margin: 30px;
         width: 150px;
     }
+
 
     /* game guide for laptops */
     #guide {
