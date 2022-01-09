@@ -1,16 +1,17 @@
-const welcomeArea = document.getElementById('welcome-area')
-const startButton = document.getElementById('start-button')
-const gameArea= document.getElementById('game-area')
-const scoreBox = document.getElementById('score-box')
-const questionElement = document.getElementById('actualquestion')
-const answerElement = document.getElementById('answers-button')
-const nextButton = document.getElementById('next-btn')
-const resetButton = document.getElementById('reset-btn')
-const currentScore = document.getElementById('score')
+//some random codes were taken from youtube tutorial (https://www.youtube.com/watch?v=riDzcEQbX6k&t=1321s)
+const welcomeArea = document.getElementById('welcome-area');
+const startButton = document.getElementById('start-button');
+const gameArea= document.getElementById('game-area');
+const scoreBox = document.getElementById('score-box');
+const questionElement = document.getElementById('actualquestion');
+const answerElement = document.getElementById('answers-button');
+const nextButton = document.getElementById('next-btn');
+const resetButton = document.getElementById('reset-btn');
+const currentScore = document.getElementById('score');
 
 
-let shuffledQuestions, currentQuestionIndex
-let score = 0
+let shuffledQuestions, currentQuestionIndex;
+let score = 0;
 
 // Game Questions
 const questions = [
@@ -95,94 +96,100 @@ const questions = [
     {question: 'What is the capital of Portugal?',
     answers: [{text:'Lisbon', correct:true},{text:'Estonia', correct:false},{text:'Bulgaria', correct:false},{text:'Kosovo', correct:false}]
     } 
-]
+];
 
-startButton.addEventListener('click', startGame)
-resetButton.addEventListener('click', startGame)
+// start/reset/next button
+startButton.addEventListener('click', startGame);
+resetButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    nextButton.disabled = true
-    launchNextQuestion()
-})
+    currentQuestionIndex++;
+    nextButton.disabled = true;
+    launchNextQuestion();
+});
 
+//start game function
 function startGame () {
-    resetButton.classList.remove('show')
-    nextButton.classList.remove('hidebtn')
-    welcomeArea.style.display = 'none'
-    gameArea.style.display = 'grid'
-    scoreBox.style.display = 'block'
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    launchNextQuestion()
+    resetButton.classList.remove('show');
+    nextButton.classList.remove('hidebtn');
+    welcomeArea.style.display = 'none';
+    gameArea.style.display = 'grid';
+    scoreBox.style.display = 'block';
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    launchNextQuestion();
 }
 
+// function to reveal the next question
 function launchNextQuestion() {
-    resetState()
+    resetState();
     if (currentQuestionIndex === questions.length) {
-        resetButton.classList.add('show')
-        nextButton.classList.add('hidebtn')
-        questionElement.innerText = `Congratulations! You've completed the quiz and you have successfully named ${score} capitals out of 27!`
+        resetButton.classList.add('show');
+        nextButton.classList.add('hidebtn');
+        questionElement.innerText = `Congratulations! You've completed the quiz and you have successfully named ${score} capitals out of 27!`;
     } else {
-        showQuestion(shuffledQuestions[currentQuestionIndex])
+        showQuestion(shuffledQuestions[currentQuestionIndex]);
     }
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', checkAnswer)
-        answerElement.appendChild(button)
-    })
+        button.addEventListener('click', checkAnswer);
+        answerElement.appendChild(button);
+    });
 }
 
+// reset game state
 function resetState() {
-    clearStatusClass(document.body)
-    nextButton.classList.add('hide')
+    clearStatusClass(document.body);
+    nextButton.classList.add('hide');
     while (answerElement.firstChild) {
-        answerElement.removeChild(answerElement.firstChild)
+        answerElement.removeChild(answerElement.firstChild);
     }
 }
 
+// checking answers
 function checkAnswer(e) {
-    nextButton.disabled = false
-    const answerButtons = document.querySelectorAll(".btn")
-    answerButtons.forEach((btn)=> btn.disabled = true)
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    if(correct) score++
-    setStatusClass(document.body, correct)
+    nextButton.disabled = false;
+    const answerButtons = document.querySelectorAll(".btn");
+    answerButtons.forEach((btn)=> btn.disabled = true);
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    if(correct) score++;
+    setStatusClass(document.body, correct);
     Array.from(answerElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide')
+        nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+        startButton.innerText = 'Restart';
+        startButton.classList.remove('hide');
     }
 }
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add('correct')
-        renderScore()
+        element.classList.add('correct');
+        renderScore();
     } else {
-        element.classList.add('wrong')
+        element.classList.add('wrong');
     }
 }
 
 function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
+// scoring
 function renderScore() {
-    currentScore.innerHTML = score
+    currentScore.innerHTML = score;
 }
