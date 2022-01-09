@@ -9,65 +9,59 @@ It is a multiple choice type of game where a player can only select one answer f
 
 
 ## Features ##
+- ### The Header ###
+    - The header of the page features the name of the game.
+    - This section is displayed in big font and is separated from the navigation bar to highlight the importance of the name of the 
+      game.
+
+![Header](images-readme/header.jpg)
+
+<br>
+
 
 - ### Navigation ###
-    - The navigation bar is located at the very top of the website. It is simple yet an effective feature of the website.
+    - The navigation bar is located at the top of the website. It is simple yet an effective feature of the website.
     - The navigation includes three links to different sections and these are accessible in each page.
     - This feature provides easy navigation for users from page to page across different devices.
 
-![Navigation Bar](images-readme/navbar-ss.jpg)
+![Navigation Bar](images-readme/navbar.jpg)
 
 <br>
 
-- ### The Header and Landing Page Image ###
-    - The header of the page features the name of the organization.
-    - This section is displayed in big font and is separated from the navigation bar to highlight the importance of the name of the organization.    
-    - The header also features an image that attracts users to know more about keto facts.
+- ### Game Introduction ###
+    - The introduction features basic information about the European Union.
+    - This section features a play button that links to the game page.
 
-![Header](images-readme/header-ss.jpg)
-
-<br>
-
-- ### Keto Facts Section ###
-    - The keto facts section features basic information about ketogenic diet.
-    - Users are provided with fundamental facts of keto which includes definition, types and its benefits.
-    - This section features eye-catching images that make the site vibrant and rich.
-
-![Keto Facts Section](images-readme/main-content-ss.jpg)
+![Game Introduction](images-readme/intro.jpg)
 
 <br>
 
-- ### Food Guide Section ###
-    - This section presents an uncomplicated guide to users showing the kinds of food to eat and which ones to stay away from.
-    - This feature also displays two images that relates to the food guide to make this section remarkable.
-
-![Food Guide Section](images-readme/food-guide-ss.jpg)
-
-<br>
-
-- ### Footer / Social Media Section ###
-    - The social media section contains three icons that links to three of the most commonly used social media apps. Each of these links, when clicked, will lead the users to another tab to retain the main page when browsing.
-    - This feature is essential to users as this will give them access to more information that is available in the social network of the organization.
+- ### Footer Section ###
+    - The footer section of the game is a simple section that provides a social media link to Facebook.
+    
  
-![Footer / Social Media Section](images-readme/footer-ss.jpg)
+![Footer](images-readme/footer.jpg)
 
 <br>
 
-- ### About Section ###
-    - The about section features a short description of the organization.
-    - This section reveals the commitment and the mission of the organization.
-    - This page also exhibits an image that depicts the culture and vibe in the organization.
+- ### Game Page ###
+    - The game page section features a welcome area for players and a start button before proceeding to the actual game.
+    - The game features four choices for each question and a next button that is only activated once the answer has been chosen.
+    - The last page of the game displays a congratulations message with the total score after completing the game
 
-![About Section](images-readme/about-us-ss.jpg)
+![Game Page Welcome Area](images-readme/welcome-area.jpg)
+![Game Page Start](images-readme/game-area.jpg)
+![Game Page With Answers](images-readme/game-area-answer.jpg)
+![Game Page End Message](images-readme/game-area-congrats.jpg)
 
 <br>
 
-- ### Contact Page ###
-    - This page features a large image with a friendly question that invites users to fill out the form and contact the organization.
-    - This section features a simple style, short and an uncomplicated form for a quick message or query from the users of the website.
+- ### Guide Page ###
+    - This page features a guide for players on how to play the game.
+    - There is also a form provided for questions, comments and recommendations for the game.
     - The contact form collects four essential information from the users: full name, email address, phone number and message. 
  
-![Contact Page](images-readme/contact-page-ss.jpg)
+![Guide Page](images-readme/help-guide.jpg)
 
 <br>
 
@@ -76,7 +70,7 @@ It is a multiple choice type of game where a player can only select one answer f
 - I have tested this page in three different browsers including Chrome, Firefox and Microsoft Edge.
     - Firefox 
 
-    ![Firefox](images-readme/firefox.jpg)
+    ![Firefox](images-readme/mozilla.jpg)
 
     - Microsoft Edge
 
@@ -84,7 +78,7 @@ It is a multiple choice type of game where a player can only select one answer f
 
     - Google Chrome
 
-    ![Google Chrome](images-readme/chrome.jpg)
+    ![Google Chrome](images-readme/google.jpg)
 
 - I confirmed that the project is responsive and functions in various screen sizes using the devtools device toolbar.
     - Laptops
