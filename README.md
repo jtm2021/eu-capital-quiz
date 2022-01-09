@@ -1,6 +1,6 @@
 # EU Capitals Quiz
 
-EU Capitals Quiz is a fun and informative game. There are around 50 countries in total in Europe. But currently, there are only 27 countries that are members of the european Union. In this game, the player will be tested if they can successfully name the capitals of these 27 countries.
+EU Capitals Quiz is a fun and informative game. There are around 50 countries in total in Europe. But currently, there are only 27 countries that are members of the European Union. In this game, the player will be tested if they can successfully name the capitals of these 27 countries.
 
 It is a multiple choice type of game where a player can only select one answer for every question. Each time the player clicks on the desired choice, the player cannot deselect or choose another answer. Each correct answer will be accumulated as the game progresses and the final total score will be shown at the end.
 
@@ -47,7 +47,7 @@ It is a multiple choice type of game where a player can only select one answer f
 - ### Game Page ###
     - The game page section features a welcome area for players and a start button before proceeding to the actual game.
     - The game features four choices for each question and a next button that is only activated once the answer has been chosen.
-    - The last page of the game displays a congratulations message with the total score after completing the game
+    - The last page of the game displays a congratulation message with the total score after completing the game
 
 ![Game Page Welcome Area](images-readme/welcome-area.jpg)
 ![Game Page Start](images-readme/game-area.jpg)
@@ -80,19 +80,7 @@ It is a multiple choice type of game where a player can only select one answer f
 
     ![Google Chrome](images-readme/google.jpg)
 
-- I confirmed that the project is responsive and functions in various screen sizes using the devtools device toolbar.
-    - Laptops
-
-    ![Laptops](images-readme/responsive-for-laptops-ss.jpg)
-
-    - Tablets
-
-    ![Tablets](images-readme/responsive-for-tablets-ss.jpg)
-    
-    - Phones
-
-    ![Phones](images-readme/responsive-for-phones-ss.jpg)
-    
+- I confirmed that the project is responsive and functions in various screen sizes using the devtools device toolbar.    
 - I confirmed that the features of the website including the navigation bar, heading, contents and other sections are completely clear and easy to understand.
 - I have confirmed that the contact form works and that each input field will only accept the required details from the users and that the send message button works correctly.
 
@@ -107,7 +95,7 @@ It is a multiple choice type of game where a player can only select one answer f
         ![HTML Home Page](images-readme/home.jpg)
     - Game Page
         ![HTML Game Page](images-readme/game.jpg)
-    - Guide Page
+    - Help Page
         ![HTML Guide Page](images-readme/guide.jpg)
 
 
@@ -133,11 +121,11 @@ The live link can be found here - https://jtm2021.github.io/eu-capital-quiz/
 ## Credits ##
 
 ### Content ###
-- Some codes were inspired and taken from a youtube tutorial by Web Dev Simplified [https://www.youtube.com/watch?v=riDzcEQbX6k&t=1321s]
+- Some codes were inspired and taken from a youtube tutorial by Web Dev Simplified. The intention was to use the tutorial as a guide in creating this project. [https://www.youtube.com/watch?v=riDzcEQbX6k&t=1321s]
 
 ### Media ###
 
-- The background image of the website was taken from [Pixabay.com](https://pixabay.com/). The links are provided below:
+- The background image of the website was taken from [Pixabay.com](https://pixabay.com/). The link is provided below:
     - https://pixabay.com/photos/european-union-european-parliament-6405066/
 
 ### Content Information ###
