@@ -15,13 +15,15 @@ body {
     font-family: 'Roboto', 'sans-serif';
     position: relative;
     object-fit: fill;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
 h1 {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 45px;
     text-shadow: 2px 2px 2px  blanchedalmond;
 }
@@ -87,12 +89,13 @@ footer {
     text-align: center;
     background-color: blanchedalmond;
     width: 100vw;
-    position: fixed;
     bottom: 0;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
     font-family: 'Roboto', 'sans-serif';
+    margin: auto;
+    position: fixed;
 }
 
 /* welcome area for game */
@@ -363,6 +366,11 @@ footer {
 
 /* For larger screen sizes from 1200px wide and up (1280X802*/
 @media screen and (min-width: 1200px) {
+    /* introduction page */
+    h1 {
+        margin-bottom: 15px;
+    }
+
     /* game area for laptops */
     .gm-area {
         height: 55%;
