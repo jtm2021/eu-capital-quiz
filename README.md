@@ -103,16 +103,19 @@ It is a multiple choice type of game where a player can only select one answer f
 
 ### Validator Testing ###
 - HTML - No errors were returned when passing through the official [**W3C validator**](https://validator.w3.org/#validate_by_input+with_options)
-    - Main Page
-        ![HTML Main Page](images-readme/htmlmain-validator-ss.jpg)
-    - About Page
-        ![HTML About Page](images-readme/htmlabout-validator-ss.jpg)
-    - Contact Page
-        ![HTML Contact Page](images-readme/htmlcontact-validator-ss.jpg)
+    - Home Page
+        ![HTML Home Page](images-readme/home.jpg)
+    - Game Page
+        ![HTML Game Page](images-readme/game.jpg)
+    - Guide Page
+        ![HTML Guide Page](images-readme/guide.jpg)
 
 
 - CSS - No errors were found when passing through the official [**(Jigsaw) validator**](https://jigsaw.w3.org/css-validator/#validate_by_input)
-    - ![CSS](images-readme/css-validator-ss.jpg)
+    - ![CSS](images-readme/css.jpg)
+
+- Lighthouse - I've tested the performance of the page using Google Chrome Lighthouse.
+    - ![Lighthouse](images-readme/lighthouse.jpg)
 
 <br>
 
@@ -123,34 +126,22 @@ It is a multiple choice type of game where a player can only select one answer f
     - In the GitHub repository, navigate to the Settings tab.
     - Go to pages tab and from the source section drop-down menu, select the main Branch and then click save button.
     - Once the main branch has been selected and saved, the page provided a link the completed website. 
-The live link can be found here - https://jtm2021.github.io/keto-bubble/
+The live link can be found here - https://jtm2021.github.io/eu-capital-quiz/
 
 <br>
 
 ## Credits ##
 
 ### Content ###
-- Some codes were inspired by the Love Running Project.
+- Some codes were inspired and taken from a youtube tutorial by Web Dev Simplified [https://www.youtube.com/watch?v=riDzcEQbX6k&t=1321s]
 
 ### Media ###
 
-- The images included in the website were taken from [Pexels.com](https://www.pexels.com/). The links are provided below:
-    - https://www.pexels.com/photo/hamburger-and-fries-photo-2983101/
-    - https://www.pexels.com/photo/salmon-dish-with-vegetables-1516415/
-    - https://www.pexels.com/photo/man-pouring-drink-on-woman-s-glass-3184181/
-    - https://www.pexels.com/photo/assorted-vegetable-lot-1300972/
-    - https://www.pexels.com/photo/woman-slicing-gourd-1153369/
-    - https://www.pexels.com/photo/photo-of-vegetables-and-fruit-on-table-4117543/
-    - https://www.pexels.com/photo/photo-of-vegetable-salad-in-bowls-1640770/
-    - https://www.pexels.com/photo/white-and-black-number-3-5242266/
-    - https://www.pexels.com/photo/photo-of-sliced-cheese-on-wooden-surface-4087609/
+- The background image of the website was taken from [Pixabay.com](https://pixabay.com/). The links are provided below:
+    - https://pixabay.com/photos/european-union-european-parliament-6405066/
 
 ### Content Information ###
 
-- The site content information are sourced from various websites. See links below:
-    - https://en.wikipedia.org/wiki/Ketogenic_diet
-    - https://www.healthline.com/nutrition/clean-keto
-    - https://www.dietdoctor.com/low-carb/keto?c_source=google&c_medium=cpc&gclid=CjwKCAjwz5iMBhAEEiwAMEAwGO39PfZgHdnpMUs1EehYgTpItvdHwwnyJhr2al-O4nA8NvFublPKfxoCkmgQAvD_BwE
-
-    
+- The site content information are sourced from Wikipedia. See link below:
+    - https://en.wikipedia.org/wiki/European_Union
 
